@@ -208,7 +208,7 @@ Serial.printf("[MAIN] Device #%d (%s) state: %s value: %d\n", device_id, device_
               {
                     if (!state)
                     {
-                     IrSender.sendRaw(rawDataOff, sizeof(rawDataOff) / sizeof(rawDataOn[0]), NEC_KHZ);
+                     IrSender.sendRaw(rawDataOff, sizeof(rawDataOff) / sizeof(rawDataOff[0]), NEC_KHZ);
                     
                      Serial.print("AC OFF ");
                     }

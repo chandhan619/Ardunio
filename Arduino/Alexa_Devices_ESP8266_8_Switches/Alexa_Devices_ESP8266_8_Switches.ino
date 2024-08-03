@@ -17,11 +17,11 @@ String arr_days[]={"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","
 String date_time;
 
 
-//#define WIFI_SSID "Kalyani"           
-//#define WIFI_PASS "7095321888"
+#define WIFI_SSID "Kalyani"           
+#define WIFI_PASS "7095321888"
  
-#define WIFI_SSID "ACTFIBERNET"               
-#define WIFI_PASS "act12345"
+//#define WIFI_SSID "ACTFIBERNET"               
+//#define WIFI_PASS "act12345"
 
  
 #define SERIAL_BAUDRATE 115200
@@ -179,7 +179,6 @@ void updateTime()
 
    uint8_t day1 = ti->tm_mday;
    String dayStr = day1 < 10 ? "0" + String(day1) : String(day1);
-
 
   Serial.print(dayStr);
   Serial.print(" ");
